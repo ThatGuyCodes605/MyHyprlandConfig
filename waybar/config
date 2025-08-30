@@ -1,0 +1,51 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 32,
+  "modules-left": ["custom/apps", "window", "tray", "custom/keybinds"],
+  "modules-center": ["clock"],
+  "modules-right": ["network", "pulseaudio", "cpu", "ram", "battery"],
+
+  "font": "JetBrains Mono Nerd Font 10",
+  "background": "#1e1e2e",
+  "foreground": "#cdd6f4",
+  "sep": " | ",
+  "border-radius": 8,
+  "border": "1px solid #313244",
+  "animation": "fade",
+  "scroll-step": 5,
+
+  "clock": {
+    "format": "{:%I:%M %p}"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}"
+  },
+  "network": {
+    "format": "{essid} {signalStrength}%",
+    "on-click": "GTK_THEME=Adwaita:dark nmgui
+"
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "on-click": "pavucontrol"
+  },
+  "custom/keybinds": {
+    "format": "⌨️",
+    "on-click": "~/.local/bin/show-keybinds.sh",
+    "tooltip": "Show keybinds"
+  },
+  "custom/apps": {
+    "format": "Apps",
+    "on-click": "rofi -config /home/asher/.config/hypr/config.rasi -show drun",
+    "tooltip": "Launch apps"
+  },
+  "cpu": {
+    "format": "{usage}%",
+    "on-click": "kitty -e btop"
+  },
+  "ram": {
+    "format": "{used}/{total} GB",
+    "on-click": "kitty -e btop"
+  }
+}

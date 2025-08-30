@@ -1,0 +1,47 @@
+* {
+  border: none;
+  border-radius: 12px; /* roundness for all widgets */
+  font-family: "JetBrainsMono Nerd Font", monospace;
+  font-size: 13px;
+  min-height: 24px;
+}
+
+window#waybar {
+  background: rgba(20, 40, 80, 0.9); /* darkish blue */
+  border-radius: 12px;
+  border: 1px solid rgba(70, 120, 200, 0.8);
+}
+/* --- Other modules --- */
+#battery,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#tray {
+  background: rgba(40, 80, 160, 0.8);
+  color: #e6f0ff;
+  border-radius: 12px;
+  padding: 0 8px;
+  margin: 2px;
+}
+
+#custom-keybinds {
+  padding: 0 10px;
+  color: #89b4fa;
+  font-size: 14px;
+}
+#custom-keybinds:hover {
+  background: #313244;
+  border-radius: 6px;
+}
+#custom-apps {
+  padding: 0 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+#custom-apps:hover {
+  background: #313244;
+  border-radius: 6px;
+}
+

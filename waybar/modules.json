@@ -1,0 +1,12 @@
+{
+  "workspaces": { "format": "{name}" },
+  "window": { "max-length": 50 },
+  "clock": { "format": "{:%I:%M %p}" },
+  "pulseaudio": { "on-click": "pavucontrol" },
+  "network": { "on-click": "GTK_THEME=Adwaita:dark nmgui
+" },
+  "tray": {},
+  "battery": {},
+  "cpu": { "format": "{}%", "exec": "~/.config/waybar/scripts/cpu.sh", "interval": 3 },
+  "ram": { "format": "{}", "exec": "~/.config/waybar/scripts/ram.sh", "interval": 5 }
+}
