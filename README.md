@@ -8,6 +8,8 @@ run: cd MyHyprlandConfigArch
 
 run: sudo sh install.sh
 
+run: sudo rm -rf ~/.config/hypr
+
 run: mv ~/hypr ~/.config/
 
 run: mv ~/waybar ~/.config/
