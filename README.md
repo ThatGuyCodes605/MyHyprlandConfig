@@ -10,18 +10,20 @@ run: sudo sh install.sh
 
 run: sudo rm -rf ~/.config/hypr
 
-run: mv ~/hypr ~/.config/
+run: mv hypr ~/.config/
 
-run: mv ~/waybar ~/.config/
+run: mv waybar ~/.config/
 
-run: mv ~/MyHyprlandConfigArch/ecatherina-farias-teste-2-3299932364 ~/Downloads
+run: mkdir ~/Downloads
+
+run: mv ecatherina-farias-teste-2-3299932364 ~/Downloads
 
 
-# Configering
-wallpapers will not work right out of the box run hyprctl monitors all then copy your monitor name and past it in line monitor: of ~/.config/hypr/hyprpaper.conf
+# Configuring
+Wallpapers will not work right out of the box. Run hyprctl monitors all, then copy your monitor name and paste it in line monitor: of ~/.config/hypr/hyprpaper.conf
 
 edit ~/.config/hypr/hyprland.conf to edit your hyprland conf
 
 # WARNING
 
-PULSEAUDIO WILL NOT WORK PLEASE USE PIPEWIRE
+PULSEAUDIO WILL NOT WORK. PLEASE USE PIPEWIRE
