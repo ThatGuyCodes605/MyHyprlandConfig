@@ -19,7 +19,7 @@ echo "==> Installing common runtime dependencies..."
 sudo pacman -S --needed \
 xorg xorg-xinit wayland \
 gtk3 gtk4 qt5-base qt6-base \
-alsa-utils pulseaudio pavucontrol \
+alsa-utils pavucontrol \
 ttf-dejavu ttf-liberation noto-fonts \
 python python-pip nodejs npm \
 unzip unrar p7zip \
@@ -34,7 +34,7 @@ networkmanager network-manager-applet \
 upower acpi \
 gsettings-desktop-schemas qt6ct qt5ct \
 lxappearance \
-ttf-fira-code ttf-hack ttf-jetbrains-mono noto-fonts-emoji nerd-fonts \
+ttf-fira-code ttf-hack ttf-jetbrains-mono noto-fonts-emoji nerd-fonts firefox \
 kitty rofi nautilus jq openrgb ffmpeg ffmpegthumbnailer
 
 
