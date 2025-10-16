@@ -27,3 +27,6 @@ edit ~/.config/hypr/hyprland.conf to edit your hyprland conf
 # WARNING
 
 PULSEAUDIO WILL NOT WORK. PLEASE USE PIPEWIRE
+
+# New features
+will add laptop support (soon) 
