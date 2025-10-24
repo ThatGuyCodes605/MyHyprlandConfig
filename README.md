@@ -27,6 +27,9 @@ run: cd MyHyprlandConfigArch
 
 Paste this into your config: 
 ```
+  nixpkgs.config.permittedInsecurePackages = [
+    "mbedtls-2.28.10"
+  ];
 environment.systemPackages = with pkgs; [
   # Core editors & tools
   vim
@@ -118,6 +121,7 @@ environment.systemPackages = with pkgs; [
 
   # Misc utils
   jq
+];
 
 ```
 
