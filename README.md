@@ -27,20 +27,14 @@ run: git clone https://github.com/ThatGuyCodes605/MyHyprlandConfigArch.git
 
 run: cd MyHyprlandConfigArch
 
-Paste this into your config located at /etc/nixos/configuration.nix: 
+Could you please paste this into your NixOS configuration file, located at /etc/nixos/configuration: 
 ```
-  nixpkgs.config.permittedInsecurePackages = [
-    "mbedtls-2.28.10"
-  ];
- environment.systemPackages = with pkgs; [
-  # Core editors & tools
+  environment.systemPackages = with pkgs; [
   vim
   nano
   neovim
   git
   thunderbird
-
-  # Desktop & appearance
   hicolor-icon-theme
   adwaita-icon-theme
   desktop-file-utils
@@ -50,8 +44,6 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   qt6ct
   libsForQt5.qt5ct
   gsettings-desktop-schemas
-
-  # Fonts (correct Nix names)
   dejavu_fonts
   liberation_ttf
   fira-code
@@ -62,7 +54,6 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   nerd-fonts.fira-code
   nerd-fonts.hack
   nerd-fonts.jetbrains-mono
-  # System & audio
   alsa-utils
   pavucontrol
   upower
@@ -70,7 +61,6 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   brightnessctl
   playerctl
   neofetch
-  # Xorg / Wayland base
   xorg.xorgserver
   xorg.xinit
   wayland
@@ -81,8 +71,6 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   jsoncpp
   glib
   pango
-
-  # Hyprland setup
   hyprland
   swaynotificationcenter
   wlr-randr
@@ -91,8 +79,6 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   hyprlock
   hyprpaper
   waybar
-
-  # Apps
   discord
   steam
   obs-studio
@@ -101,30 +87,32 @@ Paste this into your config located at /etc/nixos/configuration.nix:
   rofi
   nautilus
   openrgb
-
-  # Media tools
   ffmpeg
   ffmpegthumbnailer
-
-  # Compression tools
   unzip
   unrar
   p7zip
-
-  # Programming languages
   python3
   python3Packages.pip
   nodejs
-
-
-  # Networking
+  vscode
   networkmanager
   networkmanagerapplet
-
-  # Misc utils
   jq
+  bluez 
+  blueman
+  bluez-tools
+  gnumake
+  cmake
+  ninja 
+  pkg-config
+  gcc
+  dconf 
+  gtk3 
+  docker
+  docker-compose
+  docker-buildx
 ];
-
 
 ```
 
