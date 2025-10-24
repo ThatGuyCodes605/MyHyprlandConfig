@@ -18,7 +18,7 @@ run: mv waybar ~/.config/
 
 run: mkdir ~/Downloads
 
-run: mv ecatherina-farias-teste-2-3299932364 ~/Downloads
+run: mv ecatherina-farias-teste-2-3299932364.jpg ~/Downloads
 
 # Installation NixOS
 run: cd ~
