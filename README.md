@@ -29,6 +29,9 @@ run: cd MyHyprlandConfigArch
 
 Could you please paste this into your NixOS configuration file, located at /etc/nixos/configuration: 
 ```
+  nixpkgs.config.permittedInsecurePackages = [
+    "mbedtls-2.28.10"
+  ];
   environment.systemPackages = with pkgs; [
   vim
   nano
